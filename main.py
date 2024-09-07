@@ -14,6 +14,6 @@ content=st.text_input('Suggest the topic.')
 
 if st.button("Request a poem"):
     with st.spinner('Wait for it...'):
-        result=chat_model.predict(f"Write a poem about {content} in 5 lines with line break")
+        result=chat_model.predict(f"Write a poem about {content}")
         st.write(result)
         
